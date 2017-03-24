@@ -11,7 +11,7 @@ int Procenti (int *vklad, int b)
 
 int main()
 {
-	int vklad = 0, srok = 0, n = 0;
+	int vklad = 0, srok = 0, n = 0, dohod;
 	
 	printf("Введите сумму вклада: ");
 	scanf("%d", &vklad);
@@ -46,7 +46,8 @@ int main()
 		{
 			n = Procenti(&vklad, -10);
 			printf("Итоговая сумма: %d\n", n);
-			
+			dohod = n - vklad;
+			printf("Доходность: %d\n", dohod);
 			return 0;
 		}
 		
@@ -54,6 +55,8 @@ int main()
 		{
 			n = Procenti(&vklad, 2);
 			printf("Итоговая сумма: %d\n", n);
+			dohod = n - vklad;
+			printf("Доходность: %d\n", dohod);
 			
 			return 0;
 		}
@@ -62,6 +65,8 @@ int main()
 		{
 			n = Procenti(&vklad, 6);
 			printf("Итоговая сумма: %d\n", n);
+			dohod = n - vklad;
+			printf("Доходность: %d\n", dohod);
 			
 			return 0;
 		}
@@ -70,6 +75,8 @@ int main()
 		{
 			n = Procenti(&vklad, 12);
 			printf("Итоговая сумма: %d\n", n);
+			dohod = n - vklad;
+			printf("Доходность: %d\n", dohod);
 			
 			return 0;
 		}
@@ -81,6 +88,8 @@ int main()
 		{
 			n = Procenti(&vklad, -10);
 			printf("Итоговая сумма: %d\n", n);
+			dohod = n - vklad;
+			printf("Доходность: %d\n", dohod);
 			
 			return 0;
 		}
@@ -89,7 +98,9 @@ int main()
 		{
 			n = Procenti(&vklad, 3);
 			printf("Итоговая сумма: %d\n", n);
-			
+			dohod = n - vklad;
+			printf("Доходность: %d\n", dohod);
+
 			return 0;
 		}
 		
@@ -97,7 +108,8 @@ int main()
 		{
 			n = Procenti(&vklad, 8);
 			printf("Итоговая сумма: %d\n", n);
-			
+			dohod = n - vklad;
+			printf("Доходность: %d\n", dohod);
 			return 0;
 		}
 		
@@ -105,7 +117,8 @@ int main()
 		{
 			n = Procenti(&vklad, 15);
 			printf("Итоговая сумма: %d\n", n);
-			
+			dohod = n - vklad;
+			printf("Доходность: %d\n", dohod);
 			return 0;
 		}
 	}
